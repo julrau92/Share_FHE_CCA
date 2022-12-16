@@ -1,0 +1,52 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{cleveref}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{booktabs}
+\usepackage{marvosym}
+\usepackage{graphicx,caption}
+\usepackage{csquotes}
+\usepackage{siunitx}
+\usepackage[lighttt]{lmodern}
+\usepackage{minted}
+\usepackage{xcolor} % to access the named colour LightGray
+\usepackage{subcaption}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+\usepackage[automark]{scrlayer-scrpage}
+\usepackage[T1]{fontenc} 
+\usepackage{wrapfig}
+
+%\usemintedstyle{friendly}
+\usemintedstyle{colorful}
+
+\definecolor{LightGray}{gray}{0.9}\usepackage{caption}
+
+\renewcommand\theFancyVerbLine{\small\arabic{FancyVerbLine}}
+
+\newcommand{\vhdl}[1]{\mintinline[bgcolor=LightGray, fontsize=\small]{VHDL}{#1}}
+\newcommand{\vhdlmagenta}[1]{{\ttfamily\colorbox[HTML]{e6e6e6}{\color[HTML]{ba0066}\textbf{\small #1}}}}
+
+\pagestyle{scrheadings}
+\ihead{\textbf{Julian Rausch}\\collaborator}
+ \chead{\textbf{Title}\\Subtitle}
+ \ohead{18.05.2022}
+ \cfoot{\pagemark}
+
+\captionsetup{font={footnotesize, sf}, labelfont=bf}
+
+\graphicspath{{./images/}}
+
+\crefname{figure}{abb.}{abb.}
+\Crefname{figure}{Abb.}{Abb.}
+    
+\DeclareSIUnit\voltpp{V_{pp}}
+
+\begin{document}
+
+%DOC HERE
+
+\end{document}
